@@ -1,0 +1,47 @@
+<div class="dashboard-component">
+  <div class="season-container container mx-auto">
+    <h1>
+      STAGIONI
+    </h1>
+    <div class="season-list">
+      @for (season of seasonsList.seasons; track season.id) {
+        @if (season.id === SEASON.WINTER) {
+          <div (click)="onClickSeason(season.id)"
+               class="item cursor-pointer">
+            {{ season.name }}
+          </div>
+        } @else {
+          <div (click)="onClickSeason(season.id)"
+               class="item">
+            {{ season.name }}
+          </div>
+        }
+      }
+    </div>
+  </div>
+  <div class="food-list-component">
+    <h1>
+      LISTA CIBI
+    </h1>
+    <div class="food-list">
+      @for (food of foodList.firstDishes; track food.idFood) {
+        <div (click)="onClickCalculator(food)"
+             class="item">
+          {{ food.food }}
+        </div>
+      }
+      @for (food of foodList.secondDishes; track food.idFood) {
+        <div (click)="onClickCalculator(food)"
+             class="item">
+          {{ food.food }}
+        </div>
+      }
+      @for (food of foodList.sideDishes; track food.idFood) {
+        <div (click)="onClickCalculator(food)"
+             class="item">
+          {{ food.food }}
+        </div>
+      }
+    </div>
+  </div>
+</div>

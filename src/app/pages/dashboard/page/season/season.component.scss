@@ -1,0 +1,15 @@
+.season-component {
+  .item-list {
+    .item {
+      font-family: "Roboto", sans-serif;
+      max-width: fit-content;
+      padding: 10px;
+      background-color: #89D889;
+      border-radius: 10px;
+
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div (click)="goBack()"
+     class="go-back">
+  Torna indietro
+</div>
+<div class="calculator-component">
+  <input id="quantityInput" type="number" [(ngModel)]="quantity" />
+  <div (click)="onClickCalculator()"
+       class="button">
+    Calcola
+  </div>
+  <div class="result">
+    Risultato: {{ calculationResult }}
+  </div>
+</div>
