@@ -1,3 +1,11 @@
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 /*
     #region RESET generic
     The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on.
@@ -246,6 +254,7 @@ h1 {
 
 body {
   background: #F5F5F5;
+  font-family: 'Oswald', sans-serif !important;
 }
 
 .go-back {
@@ -256,4 +265,14 @@ body {
   border-radius: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+}
+
+font-m {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+font-s {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }

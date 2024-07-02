@@ -1,19 +1,23 @@
 <div (click)="goBack()"
      class="go-back">
-  Torna indietro
+    Torna indietro
 </div>
 <div class="season-component">
-  <h1>GIORNI</h1>
-  @for (diet of diets; track diet.id) {
-    @if (diet.season === seasonId) {
-      <div class="item-list">
-        @for (dietDetail of diet.diets; track dietDetail.day) {
-          <div (click)="onClickDay(dietDetail.dayId)"
-               class="item cursor-pointer">
-            {{ dietDetail.day }}
-          </div>
-        }
-      </div>
-    }
-  }
+    <div class="card">
+        <div class="card-header font-m>">
+            GIORNI
+        </div>
+        <ul class="list-group list-group-flush">
+            @for (diet of diets; track diet.id) {
+                @if (diet.season === seasonId) {
+                    @for (dietDetail of diet.diets; track dietDetail.day) {
+                        <li (click)="onClickDay(dietDetail.dayId)"
+                            class="list-group-item font-m">
+                            {{ dietDetail.day }}
+                        </li>
+                    }
+                }
+            }
+        </ul>
+    </div>
 </div>

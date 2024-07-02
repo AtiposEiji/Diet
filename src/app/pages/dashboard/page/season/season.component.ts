@@ -1,5 +1,5 @@
 import {Component, inject} from '@angular/core';
-import {dietsData} from '../../../../utils/constants';
+import {dietsData, seasonsData} from '../../../../utils/constants';
 import {DietsModel} from '../../../models/diets.model';
 import {ActivatedRoute, Router} from '@angular/router';
 
@@ -26,4 +26,6 @@ export class SeasonComponent {
   protected onClickDay(idDay: number): Promise<boolean> {
     return this.router.navigate([`season/${this.seasonId}/day/${idDay}`]);
   }
+
+    protected readonly seasonsList = seasonsData;
 }
