@@ -1258,6 +1258,7 @@ export const dietsData = plainToInstance(DietsModel, [
               },
               {
                 id: 1,
+                idFood: 11,
                 food: 'Sogliola',
                 quantity: 180,
                 alternatives: [
