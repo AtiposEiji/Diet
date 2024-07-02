@@ -1,61 +1,71 @@
 <div class="dashboard-component">
-  <div class="season-container container mx-auto">
-    <h1>
-      STAGIONI
-    </h1>
-    <div class="text">
-      INFO:
-      <ul>
-        <li>Il pranzo può essere invertito con la cena.</li>
-        <li>Possibilità di bere Birra piccola ma non eccessivamente al max 2 volte a settimana.</li>
-        <li>Coca light o zero mx 2 volte a settimana.</li>
-        <li> 1 volta a settimana si può la brioche a colazione.</li>
-        <li>Tutte le sere è possibile consumare uno spuntino a scelta tra: pavesini, biscotti secchi (30g), crackers oppure succo di frutta o frutta.</li>
-        <li>Se aperitivo meglio vino bianco e verdure. No pizza dopo, meglio secondo.</li>
-        <li>Gelati: Sempre in sostituzione alla merenda tipo Liuk, ghiacciolo, calippo, solero (<100kcal) oppure 1 volta a settimana gelato frutta 2 gusti o 1 volta ogni 15gg gusti crema 2 guisti.</li>
-        <li>GNOCCHI crudo 250g (375g cotto)</li>
-        <li>Al posto delle uova/carne possibile fare legume o 2 hamburger vegetali. 150g uova/carne = 250g (230g cotto) di piselli/lenticchie o 200g fagioli/ceci (500g cotto)</li>
-      </ul>
-    </div>
-    <div class="season-list">
-      @for (season of seasonsList.seasons; track season.id) {
-        @if (season.id === SEASON.WINTER) {
-          <div (click)="onClickSeason(season.id)"
-               class="item cursor-pointer">
-            {{ season.name }}
-          </div>
-        } @else {
-          <div (click)="onClickSeason(season.id)"
-               class="item">
-            {{ season.name }}
-          </div>
-        }
-      }
-    </div>
-  </div>
-  <div class="food-list-component">
-    <h1>
-      LISTA CIBI
-    </h1>
-    <div class="food-list">
-      @for (food of foodList.firstDishes; track food.idFood) {
-        <div (click)="onClickCalculator(food)"
-             class="item">
-          {{ food.food }}
+    <div class="card mb-5">
+        <div class="card-header">
+            INFO PRINCIPALI
         </div>
-      }
-      @for (food of foodList.secondDishes; track food.idFood) {
-        <div (click)="onClickCalculator(food)"
-             class="item">
-          {{ food.food }}
-        </div>
-      }
-      @for (food of foodList.sideDishes; track food.idFood) {
-        <div (click)="onClickCalculator(food)"
-             class="item">
-          {{ food.food }}
-        </div>
-      }
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Il pranzo può essere invertito con la cena.</li>
+            <li class="list-group-item">Possibilità di bere Birra piccola ma non eccessivamente al max 2 volte a
+                settimana.
+            </li>
+            <li class="list-group-item">Coca light o zero mx 2 volte a settimana.</li>
+            <li class="list-group-item">1 volta a settimana si può la brioche a colazione.</li>
+            <li class="list-group-item">Tutte le sere è possibile consumare uno spuntino a scelta tra: pavesini, biscotti
+                secchi (30g),
+                crackers oppure succo di frutta o frutta.
+            </li>
+            <li class="list-group-item">Se aperitivo meglio vino bianco e verdure. No pizza dopo, meglio secondo.</li>
+            <li class="list-group-item">Gelati: Sempre in sostituzione alla merenda tipo Liuk, ghiacciolo, calippo, solero
+                (<100kcal) oppure
+                1 volta a settimana gelato frutta 2 gusti o 1 volta ogni 15gg gusti crema 2 guisti.
+            </li>
+            <li class="list-group-item">GNOCCHI crudo 250g (375g cotto)</li>
+            <li class="list-group-item">Al posto delle uova/carne possibile fare legume o 2 hamburger vegetali. 150g
+                uova/carne = 250g (230g
+                cotto) di piselli/lenticchie o 200g fagioli/ceci (500g cotto)
+            </li>
+        </ul>
     </div>
-  </div>
+    <div class="season-container mb-3">
+        <div class="card">
+            <div class="card-header font-m>">
+                STAGIONI
+            </div>
+            <ul class="list-group list-group-flush">
+                @for (season of seasonsList.seasons; track season.id) {
+                    <li (click)="onClickSeason(season.id)"
+                        class="list-group-item font-m>">
+                        {{ season.name }}
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div class="food-list-component">
+        <div class="card">
+            <div class="card-header font-m>">
+                LISTA CIBI - CALCOLA CRUDO COTTO
+            </div>
+            <ul class="list-group list-group-flush">
+                @for (food of foodList.firstDishes; track food.idFood) {
+                    <li (click)="onClickCalculator(food)"
+                        class="list-group-item font-m>">
+                        {{ food.food }}
+                    </li>
+                }
+                @for (food of foodList.secondDishes; track food.idFood) {
+                    <li (click)="onClickCalculator(food)"
+                        class="list-group-item font-m>">
+                        {{ food.food }}
+                    </li>
+                }
+                @for (food of foodList.sideDishes; track food.idFood) {
+                    <li (click)="onClickCalculator(food)"
+                        class="list-group-item font-m>">
+                        {{ food.food }}
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
 </div>
