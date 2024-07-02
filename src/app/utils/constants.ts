@@ -3392,6 +3392,198 @@ export const dietsData = plainToInstance(DietsModel, [
                 quantity: 1
               }
             ]
+          },
+      {
+        dayId: 8,
+        day: 'Giorno sostitutivo Pizza',
+        diet: [
+          {
+            id: 0,
+            breakfast: [
+              {
+                id: 0,
+                food: 'Caffè o Thè o Latte (cucchiaio di miele o zucchero di canna oppure yogurt 150g (si può aggiungere caffè nel latte)',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 1,
+                food: 'Fette biscottate',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: '4-5 biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 1,
+                    food: 'Pane comune',
+                    quantity: 60
+                  },
+                  {
+                    id: 2,
+                    food: 'Pane integrale',
+                    quantity: 80
+                  },
+                  {
+                    id: 3,
+                    food: 'Pane tostato',
+                    quantity: 40
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Marmellata',
+                quantity: 25,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Frutta secca',
+                    quantity: 25
+                  }
+                ]
+              }
+            ],
+            midMorningSnack: [
+              {
+                id: 0,
+                food: 'Frutta',
+                quantity: 1,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Yogurt alla frutta',
+                    quantity: 125
+                  }
+                ]
+              }
+            ],
+            lunch: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 100,
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 120
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 50
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 300
+                  },
+                  {
+                    id: 4,
+                    food: 'Polenta',
+                    quantity: 300
+                  }
+                ]
+              },
+              {
+                id: 1,
+                idFood: 7,
+                food: 'Carpacce di bresaola',
+                quantity: 100,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: "Carne",
+                    quantity: 150
+                  },
+                  {
+                    id: 1,
+                    food: "Pesce",
+                    quantity: 180
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 3,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ],
+            midAfternoonSnack: [
+              {
+                id: 0,
+                food: 'Yogurt di frutta',
+                quantity: 125,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Latte',
+                    quantity: 200
+                  },
+                  {
+                    id: 1,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Cornflackes',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              }
+            ],
+            dinner: [
+              {
+                id: 0,
+                food: 'Pizza',
+                quantity: 1,
+                notes: 'Margherita, verdure o caprese'
+            ]
           }
         ]
       },
