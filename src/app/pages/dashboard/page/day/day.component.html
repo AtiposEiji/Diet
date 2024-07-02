@@ -1,135 +1,137 @@
 <div (click)="goBack()"
      class="go-back">
-  Torna indietro
+    Torna indietro
 </div>
 <div class="day-component">
-  @for (dietList of diets; track dietList.id) {
-    @for (dietDetail of dietList.diets; track dietDetail.day) {
-      @if (dietDetail.dayId == dayId) {
-        <h1>{{ dietDetail.day }}</h1>
-        @for (diet of dietDetail.diet; track diet.id) {
-          <div class="list-item">
-            <p class="item-title">Colazione</p>
-            @for (breakfast of diet.breakfast; track breakfast.id) {
-              <div class="item">
-                <div class="grid">
-                  <p class="text bold">{{ breakfast.food }}</p>
-                  <p class="text">{{ cookedQuantity(breakfast) }}</p>
-                </div>
-                <p class="text warning">{{ breakfast.notes }}</p>
-                @if (breakfast.alternatives; as alternatives) {
-                  <div class="alt-container">
-                    <p class="alt-text">Alternative</p>
-                    @for (alternative of alternatives; track alternative.id) {
-                      <div class="grid">
-                        <p class="text">{{ alternative.food }}</p>
-                        <p class="text">{{ cookedQuantity(alternative) }}</p>
-                      </div>
-                      <p class="text warning">{{ alternative.notes }}</p>
+    @for (dietList of diets; track dietList.id) {
+        @if (dietList.season === seasonId) {
+            @for (dietDetail of dietList.diets; track dietDetail.day) {
+                @if (dietDetail.dayId == dayId) {
+                    <h1>{{ dietDetail.day }}</h1>
+                    @for (diet of dietDetail.diet; track diet.id) {
+                        <div class="list-item">
+                            <p class="item-title">Colazione</p>
+                            @for (breakfast of diet.breakfast; track breakfast.id) {
+                                <div class="item">
+                                    <div class="grid">
+                                        <p class="text bold">{{ breakfast.food }}</p>
+                                        <p class="text">{{ cookedQuantity(breakfast) }}</p>
+                                    </div>
+                                    <p class="text warning">{{ breakfast.notes }}</p>
+                                    @if (breakfast.alternatives; as alternatives) {
+                                        <div class="alt-container">
+                                            <p class="alt-text">Alternative</p>
+                                            @for (alternative of alternatives; track alternative.id) {
+                                                <div class="grid">
+                                                    <p class="text">{{ alternative.food }}</p>
+                                                    <p class="text">{{ cookedQuantity(alternative) }}</p>
+                                                </div>
+                                                <p class="text warning">{{ alternative.notes }}</p>
+                                            }
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                        <div class="list-item">
+                            <p class="item-title">Spuntino di metà mattina</p>
+                            @for (midMorningSnack of diet.midMorningSnack; track midMorningSnack.id) {
+                                <div class="item">
+                                    <div class="grid">
+                                        <p class="text bold">{{ midMorningSnack.food }}</p>
+                                        <p class="text">{{ cookedQuantity(midMorningSnack) }}</p>
+                                    </div>
+                                    <p class="text warning">{{ midMorningSnack.notes }}</p>
+                                    @if (midMorningSnack.alternatives; as alternatives) {
+                                        <div class="alt-container">
+                                            <p class="alt-text">Alternative</p>
+                                            @for (alternative of alternatives; track alternative.id) {
+                                                <div class="grid">
+                                                    <p class="text">{{ alternative.food }}</p>
+                                                    <p class="text">{{ cookedQuantity(alternative) }}</p>
+                                                </div>
+                                                <p class="text warning">{{ alternative.notes }}</p>
+                                            }
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                        <div class="list-item">
+                            <p class="item-title">Pranzo</p>
+                            @for (lunch of diet.lunch; track lunch.id) {
+                                <div class="item">
+                                    <div class="grid">
+                                        <p class="text bold">{{ lunch.food }}</p>
+                                        <p class="text">{{ cookedQuantity(lunch) }}</p>
+                                    </div>
+                                    <p class="text warning">{{ lunch.notes }}</p>
+                                    @if (lunch.alternatives; as alternatives) {
+                                        <div class="alt-container">
+                                            <p class="alt-text">Alternative</p>
+                                            @for (alternative of alternatives; track alternative.id) {
+                                                <div class="grid">
+                                                    <p class="text">{{ alternative.food }}</p>
+                                                    <p class="text">{{ cookedQuantity(alternative) }}</p>
+                                                </div>
+                                                <p class="text warning">{{ alternative.notes }}</p>
+                                            }
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                        <div class="list-item">
+                            <p class="item-title">Spuntino di metà pomeriggio</p>
+                            @for (midAfternoonSnack of diet.midAfternoonSnack; track midAfternoonSnack.id) {
+                                <div class="item">
+                                    <div class="grid">
+                                        <p class="text bold">{{ midAfternoonSnack.food }}</p>
+                                        <p class="text">{{ cookedQuantity(midAfternoonSnack) }}</p>
+                                    </div>
+                                    <p class="text warning">{{ midAfternoonSnack.notes }}</p>
+                                    @if (midAfternoonSnack.alternatives; as alternatives) {
+                                        <div class="alt-container">
+                                            <p class="alt-text">Alternative</p>
+                                            @for (alternative of alternatives; track alternative.id) {
+                                                <div class="grid">
+                                                    <p class="text">{{ alternative.food }}</p>
+                                                    <p class="text">{{ cookedQuantity(alternative) }}</p>
+                                                </div>
+                                                <p class="text warning">{{ alternative.notes }}</p>
+                                            }
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
+                        <div class="list-item">
+                            <p class="item-title">Cena</p>
+                            @for (dinner of diet.dinner; track dinner.id) {
+                                <div class="item">
+                                    <div class="grid">
+                                        <p class="text bold">{{ dinner.food }}</p>
+                                        <p class="text">{{ cookedQuantity(dinner) }}</p>
+                                    </div>
+                                    <p class="text warning">{{ dinner.notes }}</p>
+                                    @if (dinner.alternatives; as alternatives) {
+                                        <div class="alt-container">
+                                            <p class="alt-text">Alternative</p>
+                                            @for (alternative of alternatives; track alternative.id) {
+                                                <div class="grid">
+                                                    <p class="text">{{ alternative.food }}</p>
+                                                    <p class="text">{{ cookedQuantity(alternative) }}</p>
+                                                </div>
+                                                <p class="text warning">{{ alternative.notes }}</p>
+                                            }
+                                        </div>
+                                    }
+                                </div>
+                            }
+                        </div>
                     }
-                  </div>
                 }
-              </div>
             }
-          </div>
-          <div class="list-item">
-            <p class="item-title">Spuntino di metà mattina</p>
-            @for (midMorningSnack of diet.midMorningSnack; track midMorningSnack.id) {
-              <div class="item">
-                <div class="grid">
-                  <p class="text bold">{{ midMorningSnack.food }}</p>
-                  <p class="text">{{ cookedQuantity(midMorningSnack) }}</p>
-                </div>
-                <p class="text warning">{{ midMorningSnack.notes }}</p>
-                @if (midMorningSnack.alternatives; as alternatives) {
-                  <div class="alt-container">
-                    <p class="alt-text">Alternative</p>
-                    @for (alternative of alternatives; track alternative.id) {
-                      <div class="grid">
-                        <p class="text">{{ alternative.food }}</p>
-                        <p class="text">{{ cookedQuantity(alternative) }}</p>
-                      </div>
-                      <p class="text warning">{{ alternative.notes }}</p>
-                    }
-                  </div>
-                }
-              </div>
-            }
-          </div>
-          <div class="list-item">
-            <p class="item-title">Pranzo</p>
-            @for (lunch of diet.lunch; track lunch.id) {
-              <div class="item">
-                <div class="grid">
-                  <p class="text bold">{{ lunch.food }}</p>
-                  <p class="text">{{ cookedQuantity(lunch) }}</p>
-                </div>
-                <p class="text warning">{{ lunch.notes }}</p>
-                @if (lunch.alternatives; as alternatives) {
-                  <div class="alt-container">
-                    <p class="alt-text">Alternative</p>
-                    @for (alternative of alternatives; track alternative.id) {
-                      <div class="grid">
-                        <p class="text">{{ alternative.food }}</p>
-                        <p class="text">{{ cookedQuantity(alternative) }}</p>
-                      </div>
-                      <p class="text warning">{{ alternative.notes }}</p>
-                    }
-                  </div>
-                }
-              </div>
-            }
-          </div>
-          <div class="list-item">
-            <p class="item-title">Spuntino di metà pomeriggio</p>
-            @for (midAfternoonSnack of diet.midAfternoonSnack; track midAfternoonSnack.id) {
-              <div class="item">
-                <div class="grid">
-                  <p class="text bold">{{ midAfternoonSnack.food }}</p>
-                  <p class="text">{{ cookedQuantity(midAfternoonSnack) }}</p>
-                </div>
-                <p class="text warning">{{ midAfternoonSnack.notes }}</p>
-                @if (midAfternoonSnack.alternatives; as alternatives) {
-                  <div class="alt-container">
-                    <p class="alt-text">Alternative</p>
-                    @for (alternative of alternatives; track alternative.id) {
-                      <div class="grid">
-                        <p class="text">{{ alternative.food }}</p>
-                        <p class="text">{{ cookedQuantity(alternative) }}</p>
-                      </div>
-                      <p class="text warning">{{ alternative.notes }}</p>
-                    }
-                  </div>
-                }
-              </div>
-            }
-          </div>
-          <div class="list-item">
-            <p class="item-title">Cena</p>
-            @for (dinner of diet.dinner; track dinner.id) {
-              <div class="item">
-                <div class="grid">
-                  <p class="text bold">{{ dinner.food }}</p>
-                  <p class="text">{{ cookedQuantity(dinner) }}</p>
-                </div>
-                <p class="text warning">{{ dinner.notes }}</p>
-                @if (dinner.alternatives; as alternatives) {
-                  <div class="alt-container">
-                    <p class="alt-text">Alternative</p>
-                    @for (alternative of alternatives; track alternative.id) {
-                      <div class="grid">
-                        <p class="text">{{ alternative.food }}</p>
-                        <p class="text">{{ cookedQuantity(alternative) }}</p>
-                      </div>
-                      <p class="text warning">{{ alternative.notes }}</p>
-                    }
-                  </div>
-                }
-              </div>
-            }
-          </div>
         }
-      }
     }
-  }
 </div>
