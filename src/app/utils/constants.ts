@@ -1813,5 +1813,1587 @@ export const dietsData = plainToInstance(DietsModel, [
         ]
       },
     ]
+  },
+  {
+    id: 2,
+    season: 0,
+    diets: [
+      {
+        dayId: 1,
+        day: 'Lunedì',
+        diet: [
+          {
+            id: 0,
+            breakfast: [
+              {
+                id: 0,
+                food: 'Caffè o Thè o Latte (cucchiaio di miele o zucchero di canna oppure yogurt 150g (si può aggiungere caffè nel latte)',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 1,
+                food: 'Fette biscottate',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: '4-5 biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 1,
+                    food: 'Pane comune',
+                    quantity: 60
+                  },
+                  {
+                    id: 2,
+                    food: 'Pane integrale',
+                    quantity: 80
+                  },
+                  {
+                    id: 3,
+                    food: 'Pane tostato',
+                    quantity: 40
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Marmellata',
+                quantity: 25,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Frutta secca',
+                    quantity: 25
+                  }
+                ]
+              }
+            ],
+            midMorningSnack: [
+              {
+                id: 0,
+                food: 'Frutta',
+                quantity: 1,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Yogurt alla frutta',
+                    quantity: 125
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Cracker',
+                quantity: 30
+              }
+            ],
+            lunch: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 100,
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 120
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 50
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 300
+                  },
+                  {
+                    id: 4,
+                    food: 'Polenta cotta',
+                    quantity: 300
+                  }
+                ]
+              },
+              {
+                id: 1,
+                idFood: 7,
+                food: 'Pollo',
+                quantity: 150
+              },
+              {
+                id: 2,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 3,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ],
+            midAfternoonSnack: [
+              {
+                id: 0,
+                food: 'Cracker integrali',
+                quantity: '1 pacchetto (30g)',
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              }
+            ],
+            dinner: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 50,
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 70
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 25
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 150
+                  },
+                  {
+                    id: 4,
+                    food: 'Polenta cotta',
+                    quantity: 150
+                  }
+                ]
+              },
+              {
+                id: 1,
+                idFood: 0,
+                food: 'Pasta al pomodoro',
+                quantity: 100
+              },
+              {
+                id: 2,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 3,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        dayId: 2,
+        day: 'Martedì',
+        diet: [
+          {
+            id: 0,
+            breakfast: [
+              {
+                id: 0,
+                food: 'Caffè o Thè o Latte (cucchiaio di miele o zucchero di canna oppure yogurt 150g (si può aggiungere caffè nel latte)',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 1,
+                food: 'Fette biscottate',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: '4-5 biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 1,
+                    food: 'Pane comune',
+                    quantity: 60
+                  },
+                  {
+                    id: 2,
+                    food: 'Pane integrale',
+                    quantity: 80
+                  },
+                  {
+                    id: 3,
+                    food: 'Pane tostato',
+                    quantity: 40
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Marmellata',
+                quantity: 25,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Frutta secca',
+                    quantity: 25
+                  }
+                ]
+              }
+            ],
+            midMorningSnack: [
+              {
+                id: 0,
+                food: 'Frutta',
+                quantity: 1,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Yogurt alla frutta',
+                    quantity: 125
+                  }
+                ]
+              }
+            ],
+            lunch: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 50,
+                notes: 'Se il pane non è di gradimento, aumentare di 30g pasta o riso',
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 70
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 25
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 150
+                  },
+                  {
+                    id: 4,
+                    food: 'Polenta cotta',
+                    quantity: 150
+                  }
+                ]
+              },
+              {
+                id: 1,
+                idFood: 0,
+                food: 'Pasta al tonno',
+                quantity: 100,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Condimento: piselli',
+                    quantity: 100
+                  },
+                  {
+                    id: 1,
+                    food: 'Condimento: pesto',
+                    quantity: 100
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 3,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ],
+            midAfternoonSnack: [
+              {
+                id: 0,
+                food: 'Yogurt di frutta',
+                quantity: 125,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Latte',
+                    quantity: 200
+                  },
+                  {
+                    id: 1,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Cornflackes',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              }
+            ],
+            dinner: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 100,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pane integrale',
+                    quantity: 120
+                  },
+                  {
+                    id: 1,
+                    food: 'Cracker, grissini, crostini, pane tostato o gallette',
+                    quantity: 50
+                  },
+                  {
+                    id: 2,
+                    food: 'Patate cotte',
+                    quantity: 300
+                  },
+                  {
+                    id: 3,
+                    food: 'Polenta cotta',
+                    quantity: 300
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Bresaola',
+                quantity: 100,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Carne salata',
+                    quantity: 100
+                  },
+                  {
+                    id: 1,
+                    food: 'Roastbeef',
+                    quantity: 100
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Passato di verdure',
+                quantity: 200
+              },
+              {
+                id: 4,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        dayId: 3,
+        day: 'Mercoledì',
+        diet: [
+          {
+            id: 0,
+            breakfast: [
+              {
+                id: 0,
+                food: 'Caffè o Thè o Latte (cucchiaio di miele o zucchero di canna oppure yogurt 150g (si può aggiungere caffè nel latte)',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 1,
+                food: 'Fette biscottate',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: '4-5 biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 1,
+                    food: 'Pane comune',
+                    quantity: 60
+                  },
+                  {
+                    id: 2,
+                    food: 'Pane integrale',
+                    quantity: 80
+                  },
+                  {
+                    id: 3,
+                    food: 'Pane tostato',
+                    quantity: 40
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Marmellata',
+                quantity: 25,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Frutta secca',
+                    quantity: 25
+                  }
+                ]
+              }
+            ],
+            midMorningSnack: [
+              {
+                id: 0,
+                food: 'Frutta',
+                quantity: 1,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Yogurt alla frutta',
+                    quantity: 125
+                  }
+                ]
+              }
+            ],
+            lunch: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 50,
+                notes: 'Se il pane non è di gradimento, aumentare di 30g pasta o riso',
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 70
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 25
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 150
+                  },
+                  {
+                    id: 4,
+                    food: 'Polenta cotta',
+                    quantity: 150
+                  }
+                ]
+              },
+              {
+                id: 1,
+                idFood: 0,
+                food: 'Riso e piselli',
+                quantity: 100,
+                notes: 'Anche Farro o altro cereale.',
+              },
+              {
+                id: 2,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 3,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ],
+            midAfternoonSnack: [
+              {
+                id: 0,
+                food: 'Cracker integrali',
+                quantity: '1 pacchetto (30g)',
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              }
+            ],
+            dinner: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 100,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pane integrale',
+                    quantity: 120
+                  },
+                  {
+                    id: 1,
+                    food: 'Cracker, grissini, crostini, pane tostato o gallette',
+                    quantity: 50
+                  },
+                  {
+                    id: 2,
+                    food: 'Patate cotte',
+                    quantity: 300
+                  },
+                  {
+                    id: 3,
+                    food: 'Polenta cotta',
+                    quantity: 300
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Bistecca di Manzo',
+                quantity: 150,
+                notes: 'Altro tipo di carne rossa'
+              },
+              {
+                id: 3,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 4,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        dayId: 4,
+        day: 'Giovedì',
+        diet: [
+          {
+            id: 0,
+            breakfast: [
+              {
+                id: 0,
+                food: 'Caffè o Thè o Latte (cucchiaio di miele o zucchero di canna oppure yogurt 150g (si può aggiungere caffè nel latte)',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 1,
+                food: 'Fette biscottate',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: '4-5 biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 1,
+                    food: 'Pane comune',
+                    quantity: 60
+                  },
+                  {
+                    id: 2,
+                    food: 'Pane integrale',
+                    quantity: 80
+                  },
+                  {
+                    id: 3,
+                    food: 'Pane tostato',
+                    quantity: 40
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Marmellata',
+                quantity: 25,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Frutta secca',
+                    quantity: 25
+                  }
+                ]
+              }
+            ],
+            midMorningSnack: [
+              {
+                id: 0,
+                food: 'Frutta',
+                quantity: 1,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Yogurt alla frutta',
+                    quantity: 125
+                  }
+                ]
+              }
+            ],
+            lunch: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 100,
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 120
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 50
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 300
+                  },
+                  {
+                    id: 4,
+                    food: 'Polenta cotta',
+                    quantity: 300
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Pesce spada',
+                quantity: 200,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Merluzzo, Halibut, Trota, Pangasio, Platessa',
+                    quantity: 200
+                  },
+                  {
+                    id: 1,
+                    food: 'Salmone o tonno fresco',
+                    quantity: 180
+                  },
+                  {
+                    id: 2,
+                    food: 'Polipo',
+                    notes: "Possibilità di patate se gradito",
+                    quantity: 250
+                  },
+                  {
+                    id: 3,
+                    food: 'Carne',
+                    quantity: 150
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 3,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ],
+            midAfternoonSnack: [
+              {
+                id: 0,
+                food: 'Yogurt di frutta',
+                quantity: 125,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Latte',
+                    quantity: 200
+                  },
+                  {
+                    id: 1,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Cornflackes',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              }
+            ],
+            dinner: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 50,
+                notes: 'Se il pane non è di gradimento, aumentare di 30g pasta o riso',
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 70
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 25
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 150
+                  },
+                  {
+                    id: 4,
+                    food: 'Polenta cotta',
+                    quantity: 150
+                  }
+                ]
+              },
+              {
+                id: 1,
+                idFood: 0,
+                food: 'Pasta olio e grana',
+                quantity: 100
+              },
+              {
+                id: 3,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 4,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        dayId: 5,
+        day: 'Venedì',
+        diet: [
+          {
+            id: 0,
+            breakfast: [
+              {
+                id: 0,
+                food: 'Caffè o Thè o Latte (cucchiaio di miele o zucchero di canna oppure yogurt 150g (si può aggiungere caffè nel latte)',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 1,
+                food: 'Fette biscottate',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: '4-5 biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 1,
+                    food: 'Pane comune',
+                    quantity: 60
+                  },
+                  {
+                    id: 2,
+                    food: 'Pane integrale',
+                    quantity: 80
+                  },
+                  {
+                    id: 3,
+                    food: 'Pane tostato',
+                    quantity: 40
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Marmellata',
+                quantity: 25,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Frutta secca',
+                    quantity: 25
+                  }
+                ]
+              }
+            ],
+            midMorningSnack: [
+              {
+                id: 0,
+                food: 'Frutta',
+                quantity: 1,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Yogurt alla frutta',
+                    quantity: 125
+                  }
+                ]
+              }
+            ],
+            lunch: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 50,
+                notes: 'Se il pane non è di gradimento, aumentare di 30g pasta o riso',
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 70
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 25
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 150
+                  },
+                  {
+                    id: 4,
+                    food: 'Polenta cotta',
+                    quantity: 150
+                  }
+                ]
+              },
+              {
+                id: 1,
+                idFood: 0,
+                food: 'Gnocchi al pomodoro',
+                quantity: 250,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Ravioli',
+                    quantity: 125,
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 3,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ],
+            midAfternoonSnack: [
+              {
+                id: 0,
+                food: 'Yogurt di frutta',
+                quantity: 125,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Latte',
+                    quantity: 200
+                  },
+                  {
+                    id: 1,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Cornflackes',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              }
+            ],
+            dinner: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 100,
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 120
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 50
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 300
+                  },
+                  {
+                    id: 4,
+                    food: 'Polenta cotta',
+                    quantity: 300
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Minestra',
+                quantity: 1
+              },
+            ]
+          }
+        ]
+      },
+      {
+        dayId: 6,
+        day: 'Sabato',
+        diet: [
+          {
+            id: 0,
+            breakfast: [
+              {
+                id: 0,
+                food: 'Caffè o Thè o Latte (cucchiaio di miele o zucchero di canna oppure yogurt 150g (si può aggiungere caffè nel latte)',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 1,
+                food: 'Fette biscottate',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: '4-5 biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 1,
+                    food: 'Pane comune',
+                    quantity: 60
+                  },
+                  {
+                    id: 2,
+                    food: 'Pane integrale',
+                    quantity: 80
+                  },
+                  {
+                    id: 3,
+                    food: 'Pane tostato',
+                    quantity: 40
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Marmellata',
+                quantity: 25,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Frutta secca',
+                    quantity: 25
+                  }
+                ]
+              }
+            ],
+            midMorningSnack: [
+              {
+                id: 0,
+                food: 'Frutta',
+                quantity: 1,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Yogurt alla frutta',
+                    quantity: 125
+                  }
+                ]
+              }
+            ],
+            lunch: [
+              {
+                id: 0,
+                food: 'Pane',
+                notes: 'Se il pane non è di gradimento, aumentare di 30g pasta o riso',
+                quantity: 50,
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 70
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 25
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 150
+                  },
+                  {
+                    id: 4,
+                    food: 'Polenta cotta',
+                    quantity: 150
+                  }
+                ]
+              },
+              {
+                id: 1,
+                idFood: 0,
+                food: 'Pasta o riso al salmone',
+                quantity: 130,
+                notes: 'Salmone, tonno + pomodoro se si vuole'
+              },
+              {
+                id: 2,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 3,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ],
+            midAfternoonSnack: [
+              {
+                id: 0,
+                food: 'Yogurt di frutta',
+                quantity: 125,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Latte',
+                    quantity: 200
+                  },
+                  {
+                    id: 1,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Cornflackes',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              }
+            ],
+            dinner: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 100,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pane integrale',
+                    quantity: 120
+                  },
+                  {
+                    id: 1,
+                    food: 'Cracker, grissini, crostini, pane tostato o gallette',
+                    quantity: 50
+                  },
+                  {
+                    id: 2,
+                    food: 'Patate cotte',
+                    quantity: 300
+                  },
+                  {
+                    id: 3,
+                    food: 'Polenta cotta',
+                    quantity: 300
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Tagliata di manzo',
+                quantity: 150,
+                alternatives: [
+                  {
+                    food: 'Grigliata di carne o pesce',
+                    quantity: 150
+                  }
+                ]
+              },
+              {
+                id: 3,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 4,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        dayId: 7,
+        day: 'Domenica',
+        diet: [
+          {
+            id: 0,
+            breakfast: [
+              {
+                id: 0,
+                food: 'Caffè o Thè o Latte (cucchiaio di miele o zucchero di canna oppure yogurt 150g (si può aggiungere caffè nel latte)',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 1,
+                food: 'Fette biscottate',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: '4-5 biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 1,
+                    food: 'Pane comune',
+                    quantity: 60
+                  },
+                  {
+                    id: 2,
+                    food: 'Pane integrale',
+                    quantity: 80
+                  },
+                  {
+                    id: 3,
+                    food: 'Pane tostato',
+                    quantity: 40
+                  }
+                ]
+              },
+              {
+                id: 2,
+                food: 'Marmellata',
+                quantity: 25,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Frutta secca',
+                    quantity: 25
+                  }
+                ]
+              }
+            ],
+            midMorningSnack: [
+              {
+                id: 0,
+                food: 'Frutta',
+                quantity: 1,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Yogurt alla frutta',
+                    quantity: 125
+                  }
+                ]
+              }
+            ],
+            lunch: [
+              {
+                id: 0,
+                food: 'Polenta',
+                quantity: 300,
+                alternatives: [
+                  {
+                    id: 1,
+                    food: 'Pane integrale',
+                    quantity: 120
+                  },
+                  {
+                    id: 2,
+                    food: 'Cracker, grissini, crostini, pane tostato',
+                    quantity: 50
+                  },
+                  {
+                    id: 3,
+                    food: 'Patate cotte',
+                    quantity: 300
+                  },
+                  {
+                    id: 4,
+                    food: 'Pane',
+                    quantity: 100
+                  }
+                ]
+              },
+              {
+                id: 1,
+                idFood: 7,
+                food: 'Carne di vitello',
+                quantity: 150
+              },
+              {
+                id: 2,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 3,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ],
+            midAfternoonSnack: [
+              {
+                id: 0,
+                food: 'Yogurt di frutta',
+                quantity: 125,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Latte',
+                    quantity: 200
+                  },
+                  {
+                    id: 1,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Cornflackes',
+                quantity: 30,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pavesini',
+                    quantity: '1 pacchetto'
+                  },
+                  {
+                    id: 1,
+                    food: 'Biscotti secchi',
+                    quantity: 30
+                  },
+                  {
+                    id: 2,
+                    food: 'Barretta ai cereali',
+                    quantity: 1
+                  },
+                  {
+                    id: 3,
+                    food: 'Frutta',
+                    quantity: 1
+                  }
+                ]
+              }
+            ],
+            dinner: [
+              {
+                id: 0,
+                food: 'Pane',
+                quantity: 50,
+                alternatives: [
+                  {
+                    id: 0,
+                    food: 'Pane integrale',
+                    quantity: 120
+                  },
+                  {
+                    id: 1,
+                    food: 'Cracker, grissini, crostini, pane tostato o gallette',
+                    quantity: 25
+                  },
+                  {
+                    id: 2,
+                    food: 'Patate cotte',
+                    quantity: 150
+                  },
+                  {
+                    id: 3,
+                    food: 'Polenta cotta',
+                    quantity: 150
+                  }
+                ]
+              },
+              {
+                id: 1,
+                food: 'Pasta e piselli',
+                quantity: 100,
+                notes: 'Altro sugo è ok',
+                alternatives: [
+                  {
+                    id: 0,
+                    food: "Toast: 2 fette di pancarrè, 2 fette di fontina, 30-40g cotto",
+                    quantity: 2
+                  },
+                  {
+                    id: 0,
+                    food: "Passato di verdure",
+                    quantity: 1
+                  }
+                ]
+              },
+              {
+                id: 3,
+                food: 'Verdura',
+                quantity: 'Q.B.'
+              },
+              {
+                id: 4,
+                food: 'Frutta',
+                quantity: 1
+              }
+            ]
+          }
+        ]
+      },
+    ]
   }
 ] as DietsModel[]);
