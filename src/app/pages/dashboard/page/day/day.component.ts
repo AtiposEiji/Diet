@@ -66,17 +66,22 @@ export class DayComponent {
   }
 
   private calculateCookedQuantity(data: FoodDataModel): string {
-    let result: number = Number(data.quantity);
-    const allDishes = [
-      ...foodListData.firstDishes,
-      ...foodListData.secondDishes,
-      ...foodListData.sideDishes
-    ];
-    allDishes.forEach(dish => {
-      if (data.idFood === dish.idFood) {
-        result = (dish.cookedWeight * Number(data.quantity)) / dish.rawWeight;
-      }
-    });
-    return `${Math.round(result)}g cotto`;
-  }
+  let cookedResult: number = Number(data.quantity);
+  const allDishes = [
+    ...foodListData.firstDishes,
+    ...foodListData.secondDishes,
+    ...foodListData.sideDishes
+  ];
+
+  allDishes.forEach(dish => {
+    if (data.idFood === dish.idFood) {
+      cookedResult = (dish.cookedWeight * Number(data.quantity)) / dish.rawWeight;
+    }
+  });
+
+  const rawQuantity = Number(data.quantity);
+  const cookedQuantity = Math.round(cookedResult);
+
+  return `${rawQuantity}g crudo → ${cookedQuantity}g cotto`;
+}
 }
