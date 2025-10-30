@@ -18,7 +18,7 @@
                                         <div class="item mb-4">
                                             <div class="row row-cols-auto">
                                                 <p class="text fw-bold col">{{ breakfast.food }}</p>
-                                                <p class="text col text-danger fs-6">{{ breakfast.rawWeight }}</p>
+                                                <p class="text col text-danger fs-6">{{ cookedQuantity(breakfast) }}</p>
                                             </div>
                                             <p class="text text-danger fs-6 mt-2">{{ breakfast.notes }}</p>
                                             @if (breakfast.alternatives; as alternatives) {
@@ -27,7 +27,7 @@
                                                     @for (alternative of alternatives; track alternative.id) {
                                                         <div class="row row-cols-auto mb-2">
                                                             <p class="text col">{{ alternative.food }}</p>
-                                                            <p class="text col text-danger fs-6">{{ alternative.rawWeight }}</p>
+                                                            <p class="text col text-danger fs-6">{{ cookedQuantity(alternative) }}</p>
                                                         </div>
                                                         <p class="text text-danger fs-6">{{ alternative.notes }}</p>
                                                     }
@@ -47,7 +47,7 @@
                                         <div class="item mb-4">
                                             <div class="row row-cols-auto">
                                                 <p class="text fw-bold col">{{ midMorningSnack.food }}</p>
-                                                <p class="text col text-danger fs-6">{{ midMorningSnack.rawWeight }}</p>
+                                                <p class="text col text-danger fs-6">{{ cookedQuantity(midMorningSnack) }}</p>
                                             </div>
                                             <p class="text text-danger fs-6 mt-2">{{ midMorningSnack.notes }}</p>
                                             @if (midMorningSnack.alternatives; as alternatives) {
@@ -56,7 +56,7 @@
                                                     @for (alternative of alternatives; track alternative.id) {
                                                         <div class="row row-cols-auto mb-2">
                                                             <p class="text col">{{ alternative.food }}</p>
-                                                            <p class="text col text-danger fs-6">{{ alternative.rawWeight }}</p>
+                                                            <p class="text col text-danger fs-6">{{ cookedQuantity(alternative) }}</p>
                                                         </div>
                                                         <p class="text text-danger fs-6">{{ alternative.notes }}</p>
                                                     }
@@ -77,7 +77,7 @@
                                         <div class="item mb-4">
                                             <div class="row row-cols-auto mb-2">
                                                 <p class="text fw-bold col">{{ lunch.food }}</p>
-                                                <p class="text col text-danger fs-6">{{ lunch.rawWeight }}</p>
+                                                <p class="text col text-danger fs-6">{{ cookedQuantity(lunch) }}</p>
                                             </div>
                                             <p class="text text-danger fs-6 mt-2">{{ lunch.notes }}</p>
                                             @if (lunch.alternatives; as alternatives) {
@@ -86,7 +86,7 @@
                                                     @for (alternative of alternatives; track alternative.id) {
                                                         <div class="row row-cols-auto mb-2">
                                                             <p class="text col">{{ alternative.food }}</p>
-                                                            <p class="text col text-danger fs-6">{{ alternative.rawWeight }}</p>
+                                                            <p class="text col text-danger fs-6">{{ cookedQuantity(alternative) }}</p>
                                                         </div>
                                                         <p class="text text-danger fs-6">{{ alternative.notes }}</p>
                                                     }
@@ -107,7 +107,7 @@
                                         <div class="item mb-4">
                                             <div class="row row-cols-auto mb-2">
                                                 <p class="text fw-bold col">{{ midAfternoonSnack.food }}</p>
-                                                <p class="text col text-danger fs-6">{{ midAfternoonSnack.rawWeight }}</p>
+                                                <p class="text col text-danger fs-6">{{ cookedQuantity(midAfternoonSnack) }}</p>
                                             </div>
                                             <p class="text text-danger fs-6 mt-2">{{ midAfternoonSnack.notes }}</p>
                                             @if (midAfternoonSnack.alternatives; as alternatives) {
@@ -116,7 +116,7 @@
                                                     @for (alternative of alternatives; track alternative.id) {
                                                         <div class="row row-cols-auto mb-2">
                                                             <p class="text col">{{ alternative.food }}</p>
-                                                            <p class="text col text-danger fs-6">{{ alternative.rawWeight }}</p>
+                                                            <p class="text col text-danger fs-6">{{ cookedQuantity(alternative) }}</p>
                                                         </div>
                                                         <p class="text text-danger fs-6">{{ alternative.notes }}</p>
                                                     }
@@ -137,7 +137,7 @@
                                         <div class="item mb-4">
                                             <div class="row row-cols-auto mb-2">
                                                 <p class="text fw-bold col">{{ dinner.food }}</p>
-                                                <p class="text col text-danger fs-6">{{ dinner.rawWeight }}</p>
+                                                <p class="text col text-danger fs-6">{{ cookedQuantity(dinner) }}</p>
                                             </div>
                                             <p class="text text-danger fs-6 mt-2">{{ dinner.notes }}</p>
                                             @if (dinner.alternatives; as alternatives) {
@@ -146,7 +146,7 @@
                                                     @for (alternative of alternatives; track alternative.id) {
                                                         <div class="row row-cols-auto mb-2">
                                                             <p class="text col">{{ alternative.food }}</p>
-                                                            <p class="text col text-danger fs-6">{{ alternative.rawWeight }}</p>
+                                                            <p class="text col text-danger fs-6">{{ cookedQuantity(alternative) }}</p>
                                                         </div>
                                                         <p class="text text-danger fs-6">{{ alternative.notes }}</p>
                                                     }
